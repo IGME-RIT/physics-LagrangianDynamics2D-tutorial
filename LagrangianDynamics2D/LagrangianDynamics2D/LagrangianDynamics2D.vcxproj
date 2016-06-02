@@ -41,6 +41,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>$(SolutionDir)/Resources/include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)/Resources/lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(SolutionDir)/Resources/include;$(ExecutablePath)</ExecutablePath>
+    <ReferencePath>$(SolutionDir)/Resources/lib;$(ReferencePath)</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ExecutablePath>$(SolutionDir)/Resources/include;$(ExecutablePath)</ExecutablePath>
+    <ReferencePath>$(SolutionDir)/Resources/lib;$(ReferencePath)</ReferencePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
